@@ -3,20 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="GPA Calculator 2026 - CGPA to Percentage Converter, Semester GPA Calculator for University students. Track academic performance with multiple semesters, export Excel reports.">
-    <meta name="keywords" content="GPA Calculator, CGPA to Percentage Converter, Semester GPA Calculator, University GPA Calculator, College GPA Calculator, Grade Point Average, SGPA Calculator, CGPA Calculator, Grade Calculator, Exam Score Calculator, Academic Tracker, Student Performance, GPA to Percentage, Percentage to GPA, 4.0 Scale GPA, Weighted GPA Calculator, Cumulative GPA, Term GPA Calculator">
-    <meta name="author" content="GPA Calculator 2026">
+    <meta name="description" content="Official HEC GPA Calculator 2026. Calculate Semester SGPA and Cumulative CGPA for Pakistani Universities. Free CGPA to Percentage converter and Excel report exporter.">
+    <meta name="keywords" content="HEC GPA Calculator, University GPA Calculator Pakistan, CGPA to Percentage Converter, UST Bannu GPA, NUST GPA Calculator, Semester GPA Calculator 2026">
+    <meta name="author" content="Munir Ullah Khan">
     <meta name="robots" content="index, follow">
-    <title>GPA Calculator 2026 | CGPA to Percentage Converter | Semester GPA Calculator for University</title>
+    <title>GPA Calculator 2026 | CGPA to Percentage Converter | HEC University Standard</title>
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "GPA Calculator 2026",
+      "operatingSystem": "Web",
+      "applicationCategory": "EducationApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
 </head>
 <body>
-<div class="wrap">
-    <h1>📊 GPA Calculator 2026</h1>
-    <p class="subtitle">CGPA to Percentage Converter | Semester GPA Calculator for University | Track your academic performance</p>
 
-    <!-- Student Information Card -->
+<div class="ad-top" style="text-align:center; margin: 10px 0; min-height: 90px;">
+    </div>
+
+<div class="wrap">
+    <div class="header-flex" style="display: flex; justify-content: space-between; align-items: center;">
+        <h1>📊 GPA Calculator 2026</h1>
+        <a href="https://play.google.com/store/apps/details?id=your.scancamera.pro" target="_blank" style="text-decoration:none; font-size: 12px; color: #3b82f6; font-weight: bold;">🚀 Try ScanCamera Pro</a>
+    </div>
+    <p class="subtitle">Official HEC Standard | CGPA to Percentage | Track Semester Performance</p>
+
     <div class="card">
         <div class="sec-lbl">🎓 Student Information</div>
         <div class="info-grid">
@@ -28,63 +50,55 @@
         <div class="err" id="err-info">⚠️ Please fill in all student fields before downloading.</div>
     </div>
 
-    <!-- Semester Tabs -->
     <div class="tabs" id="tabs"></div>
 
     <div class="grid2">
-        <!-- Add Course Card -->
         <div class="card">
             <div class="sec-lbl">📚 Add Course | Grade Points Calculator</div>
             <div class="add-row">
-                <div class="field"><label>Course name</label><input type="text" id="i-name" placeholder="e.g. Calculus, Programming"></div>
+                <div class="field"><label>Course name</label><input type="text" id="i-name" placeholder="e.g. Calculus"></div>
                 <div class="field"><label>Marks (0–100)</label><input type="number" id="i-marks" placeholder="85" min="0" max="100" step="0.1"></div>
                 <div class="field"><label>Credits</label><input type="number" id="i-cr" value="3" min="1" max="10"></div>
                 <div class="field"><label>&nbsp;</label><button class="btn btn-blue btn-icon" id="btn-add">+</button></div>
             </div>
             <div class="clist" id="clist"><div class="empty">📖 No courses yet. Add your first course above.</div></div>
+            
+            <div class="ad-native" style="margin-top: 20px;">
+                </div>
         </div>
 
-        <!-- Results Card -->
         <div class="card">
             <div class="sec-lbl">📈 GPA Results | CGPA Analysis</div>
             <div class="sem-bar"><span>📊 This Semester SGPA</span><span id="sem-gpa">0.00</span></div>
             <div class="gpa-big" id="cum-gpa">0.00</div>
             <div class="gpa-lbl">🎯 Cumulative CGPA &nbsp;·&nbsp; <span id="tot-cr">0</span> credit hours completed</div>
-            <div class="stats-row">
-                <div class="stat"><div class="stat-v" id="st-c">0</div><div class="stat-l">Total Courses</div></div>
-                <div class="stat"><div class="stat-v" id="st-s">1</div><div class="stat-l">Semesters</div></div>
-                <div class="stat"><div class="stat-v" id="st-cr">0</div><div class="stat-l">Total Credits</div></div>
-            </div>
             
-            <!-- CGPA to Percentage Converter -->
             <div class="percentage-converter">
                 <div class="sec-lbl" style="margin-top: 12px;">📊 CGPA to Percentage Converter</div>
                 <div class="converter-row">
                     <div class="field"><label>CGPA (0-4.0)</label><input type="number" id="cgpa-input" placeholder="0.00" min="0" max="4" step="0.01" value="0.00"></div>
                     <div class="field"><label>Percentage (%)</label><input type="text" id="percentage-output" readonly placeholder="0.00%"></div>
                 </div>
-                <div class="converter-note">Formula: Percentage = CGPA × 25 (for 4.0 scale)</div>
             </div>
 
-            <!-- Grade Scale Reference -->
             <div class="scales">
                 <div class="sec-lbl" style="margin-bottom: 8px;">📏 Grade Scale (4.0 System)</div>
                 <div class="si" id="sc-ex"><span>⭐ Excellent (A+, A)</span><span>3.7 – 4.0</span></div>
                 <div class="si" id="sc-gd"><span>✅ Good (A-, B+)</span><span>3.0 – 3.6</span></div>
                 <div class="si" id="sc-av"><span>📘 Average (B, B-, C+)</span><span>2.0 – 2.9</span></div>
-                <div class="si" id="sc-bl"><span>⚠️ Below Average (C, D, F)</span><span>0.0 – 1.9</span></div>
             </div>
             
-            <!-- Action Buttons -->
             <button class="btn-green" id="btn-dl">📥 Download Excel Report (XLSX)</button>
             <button class="btn-outline" id="btn-reset" style="margin-top: 8px;">🔄 Reset All Data</button>
         </div>
     </div>
     
-    <!-- Footer -->
+    <div class="ad-bottom" style="text-align:center; margin: 20px 0;">
+        </div>
+
     <div class="footer">
-        <p>🎓 GPA Calculator 2026 | CGPA to Percentage Converter | Semester GPA Calculator for University Students</p>
-        <p style="font-size: 11px; margin-top: 8px;">© 2026 - Track your academic journey | Accurate 4.0 GPA Scale</p>
+        <p>🎓 GPA Calculator 2026 | Built by Munir Ullah Khan (AI Engineer)</p>
+        <p style="font-size: 11px; margin-top: 8px;">© 2026 - Optimized for HEC Standards | <a href="llms.txt" style="color:#666;">AI Directory</a></p>
     </div>
 </div>
 
