@@ -9,34 +9,22 @@
     <meta name="robots" content="index, follow">
     <title>GPA Calculator 2026 | CGPA to Percentage Converter | HEC University Standard</title>
     
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "GPA Calculator 2026",
-      "operatingSystem": "Web",
-      "applicationCategory": "EducationApplication",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
-      }
-    }
-    </script>
-
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+    <script src="https://alarmpenguinmelt.com/ac/5c/c4/ac5cc423776f5bc468b963f81376121e.js"></script>
 </head>
 <body>
 
-<div class="ad-top" style="text-align:center; margin: 10px 0; min-height: 90px;">
+<div class="wrap">
+    <div style="text-align:center; margin-bottom: 15px;">
+        <script>
+            atOptions = { 'key' : 'e193dddfd1166cac1d169f027392c3e0', 'format' : 'iframe', 'height' : 90, 'width' : 728, 'params' : {} };
+        </script>
+        <script src="https://alarmpenguinmelt.com/e193dddfd1166cac1d169f027392c3e0/invoke.js"></script>
     </div>
 
-<div class="wrap">
-    <div class="header-flex" style="display: flex; justify-content: space-between; align-items: center;">
-        <h1>📊 GPA Calculator 2026</h1>
-        <a href="https://play.google.com/store/apps/details?id=your.scancamera.pro" target="_blank" style="text-decoration:none; font-size: 12px; color: #3b82f6; font-weight: bold;">🚀 Try ScanCamera Pro</a>
-    </div>
+    <h1>📊 GPA Calculator 2026</h1>
     <p class="subtitle">Official HEC Standard | CGPA to Percentage | Track Semester Performance</p>
 
     <div class="card">
@@ -47,58 +35,50 @@
             <div class="field"><label>Registration number *</label><input type="text" id="s-reg" placeholder="e.g. 2021-CS-001"></div>
             <div class="field"><label>Roll number *</label><input type="text" id="s-roll" placeholder="e.g. 101"></div>
         </div>
-        <div class="err" id="err-info">⚠️ Please fill in all student fields before downloading.</div>
     </div>
 
     <div class="tabs" id="tabs"></div>
 
     <div class="grid2">
         <div class="card">
-            <div class="sec-lbl">📚 Add Course | Grade Points Calculator</div>
+            <div class="sec-lbl">📚 Add Course</div>
             <div class="add-row">
                 <div class="field"><label>Course name</label><input type="text" id="i-name" placeholder="e.g. Calculus"></div>
-                <div class="field"><label>Marks (0–100)</label><input type="number" id="i-marks" placeholder="85" min="0" max="100" step="0.1"></div>
-                <div class="field"><label>Credits</label><input type="number" id="i-cr" value="3" min="1" max="10"></div>
+                <div class="field"><label>Marks</label><input type="number" id="i-marks" placeholder="85"></div>
+                <div class="field"><label>Credits</label><input type="number" id="i-cr" value="3"></div>
                 <div class="field"><label>&nbsp;</label><button class="btn btn-blue btn-icon" id="btn-add">+</button></div>
             </div>
-            <div class="clist" id="clist"><div class="empty">📖 No courses yet. Add your first course above.</div></div>
-            
-            <div class="ad-native" style="margin-top: 20px;">
-                </div>
+            <div class="clist" id="clist"></div>
+
+            <div style="text-align:center; margin-top: 20px; border-top: 1px dashed #ddd; padding-top: 15px;">
+                <script>
+                    atOptions = { 'key' : '2495a4443790b730533ef1d24c361d72', 'format' : 'iframe', 'height' : 250, 'width' : 300, 'params' : {} };
+                </script>
+                <script src="https://alarmpenguinmelt.com/2495a4443790b730533ef1d24c361d72/invoke.js"></script>
+            </div>
         </div>
 
         <div class="card">
-            <div class="sec-lbl">📈 GPA Results | CGPA Analysis</div>
-            <div class="sem-bar"><span>📊 This Semester SGPA</span><span id="sem-gpa">0.00</span></div>
+            <div class="sec-lbl">📈 Results</div>
+            <div class="sem-bar"><span>📊 SGPA</span><span id="sem-gpa">0.00</span></div>
             <div class="gpa-big" id="cum-gpa">0.00</div>
-            <div class="gpa-lbl">🎯 Cumulative CGPA &nbsp;·&nbsp; <span id="tot-cr">0</span> credit hours completed</div>
             
-            <div class="percentage-converter">
-                <div class="sec-lbl" style="margin-top: 12px;">📊 CGPA to Percentage Converter</div>
-                <div class="converter-row">
-                    <div class="field"><label>CGPA (0-4.0)</label><input type="number" id="cgpa-input" placeholder="0.00" min="0" max="4" step="0.01" value="0.00"></div>
-                    <div class="field"><label>Percentage (%)</label><input type="text" id="percentage-output" readonly placeholder="0.00%"></div>
-                </div>
-            </div>
+            <script async="async" data-cfasync="false" src="https://alarmpenguinmelt.com/311f59a36342cba12afaabec1ea5fc63/invoke.js"></script>
+            <div id="container-311f59a36342cba12afaabec1ea5fc63"></div>
 
-            <div class="scales">
-                <div class="sec-lbl" style="margin-bottom: 8px;">📏 Grade Scale (4.0 System)</div>
-                <div class="si" id="sc-ex"><span>⭐ Excellent (A+, A)</span><span>3.7 – 4.0</span></div>
-                <div class="si" id="sc-gd"><span>✅ Good (A-, B+)</span><span>3.0 – 3.6</span></div>
-                <div class="si" id="sc-av"><span>📘 Average (B, B-, C+)</span><span>2.0 – 2.9</span></div>
-            </div>
-            
-            <button class="btn-green" id="btn-dl">📥 Download Excel Report (XLSX)</button>
-            <button class="btn-outline" id="btn-reset" style="margin-top: 8px;">🔄 Reset All Data</button>
+            <button class="btn-green" id="btn-dl" style="margin-top:15px;">📥 Download Excel Report</button>
         </div>
     </div>
     
-    <div class="ad-bottom" style="text-align:center; margin: 20px 0;">
-        </div>
+    <div style="text-align:center; margin-top: 20px;">
+        <script>
+            atOptions = { 'key' : '8d0e93df01fc0b1baf9c89da863dda74', 'format' : 'iframe', 'height' : 60, 'width' : 468, 'params' : {} };
+        </script>
+        <script src="https://alarmpenguinmelt.com/8d0e93df01fc0b1baf9c89da863dda74/invoke.js"></script>
+    </div>
 
     <div class="footer">
-        <p>🎓 GPA Calculator 2026 | Built by Munir Ullah Khan (AI Engineer)</p>
-        <p style="font-size: 11px; margin-top: 8px;">© 2026 - Optimized for HEC Standards | <a href="llms.txt" style="color:#666;">AI Directory</a></p>
+        <p>© 2026 - GPA Calculator | Optimized for HEC Standards</p>
     </div>
 </div>
 
