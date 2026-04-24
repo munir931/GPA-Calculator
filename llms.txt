@@ -1,0 +1,11 @@
+# GPA Calculator Pakistan
+A high-performance web tool for calculating University GPA/CGPA based on HEC criteria.
+
+## Key Features
+- Supports 4.0 and 5.0 GPA scales.
+- Real-time percentage conversion.
+- Mobile-friendly and works offline via Cloudflare.
+- Specific presets for UST Bannu and KPK colleges.
+
+## Usage
+Users can input their credit hours and obtained grades to get an instant, accurate CGPA report.
